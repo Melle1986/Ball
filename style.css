@@ -1,0 +1,29 @@
+:root {
+    --ball-rebound: translateY(300px) rotateX(40deg);
+}
+
+body {
+    background-image: url(https://images.unsplash.com/photo-1572454181157-0b40dd7667fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1201&q=80);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    animation: bouns 1s infinite alternate;
+}
+
+@keyframes bouns {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-300px);
+    }
+}
